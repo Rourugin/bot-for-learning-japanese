@@ -1,8 +1,8 @@
 from aiogram import Router
 
-from app.handlers.main_h.py import main_r
-from app.handlers.verbs_h.py import verbs_r
-from app.handlers.constructions_h.py import constructions_r
+from app.handlers.main_h import main_r
+from app.handlers.verbs_h import verbs_r
+from app.handlers.constructions_h import constructions_r
 
 def setup_routers() -> Router:
     router = Router()
