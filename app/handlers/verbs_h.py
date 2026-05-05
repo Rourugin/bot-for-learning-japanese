@@ -15,7 +15,7 @@ async def verb(message: Message) -> Any:
     text = ""
     words = await rq.get_all_words()
     for i in range(0, words_count):
-        if (message.text.lower() == words[i]['word']) or (message.text.lower() == words[i]['pronouns']):
+        if (message.text.lower() == words[i]['word']) or (message.text.lower() == words[i]['pronouns']) or (message.text.lower() == words[i]['translate']):
             word_num = i
     if word_num == None:
         text = "К сожалению, этого слова нет в нашем словаре:(\nНо мы обязательно это исправим!"
